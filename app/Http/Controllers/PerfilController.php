@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class PerfilController extends Controller
 {
@@ -26,6 +27,7 @@ class PerfilController extends Controller
     	$user->name=$request->input('name');
     	$user->email=$request->input('email');
     	$user->password=$request->input('pass');
+    	$user->save();
 
     	return redirect('/');
     }

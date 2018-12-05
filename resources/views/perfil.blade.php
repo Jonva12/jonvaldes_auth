@@ -8,7 +8,8 @@
                 <div class="card-header">Perfil</div>
 
                 <div class="card-body">
-                    <form action="/perfil" method="get">
+                    <form action="/perfilCambiar" method="get">
+                        <input type="hidden" name="id" value="{{Auth::user()->id}}">
                         <div>
                             Nombre: <input type="text" name="name" value="{{Auth::user()->name}}">
                         </div>

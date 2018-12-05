@@ -22,4 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/perfil', 'PerfilController@index')->name('perfil');
+Route::get('/perfilCambiar', 'PerfilController@cambiar')->name('perfilCambiar');
 Route::get('/mensajes', 'MensajesController@index')->name('mensajes');
